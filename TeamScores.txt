@@ -1,0 +1,5 @@
+リバプール 3,Манчестер_Юнайтед 3
+Tarantulas_2 1,FC_Awesome 0
+Lions 1,FC_Awesome 1
+Tarantulas_2 3,Манчестер_Юнайтед 1
+Lions 4,Grouches 0
