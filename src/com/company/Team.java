@@ -8,20 +8,22 @@ import java.util.*;
 
 public class Team {
 
-    HashMap<String, Integer> results = new HashMap<>();
+    HashMap<String, Integer> results = new HashMap<String, Integer>();
 
 
     public static void main(String[] args) {
 
 
-        new Team().go();
+//        new Team().go();
         new Team().sorted();
+
 
 
     }
 
 
     public void go() {
+
         readScores(); // reading them in and create the results board
 
         System.out.println(results);
@@ -30,6 +32,7 @@ public class Team {
     }
     public void sorted(){
         readScores();
+
         System.out.println(sortTableRows(results));
 
     }
@@ -76,6 +79,7 @@ public class Team {
             results.put(clubscore2[0], totalscore);
 
 
+
         }
 
 
@@ -83,9 +87,13 @@ public class Team {
 
     public TreeMap<String, Integer> sortTableRows(Map<String, Integer> results) {
         CompareValues compareValues = new CompareValues(results);
-        TreeMap<String, Integer> sortedMap = new TreeMap(compareValues);
+
+        TreeMap<String, Integer> sortedMap = new TreeMap<>(compareValues);
         sortedMap.putAll(results);
+
+        sortedMap.forEach((k,v) -> System.out.println(k + "=" + v + " "));
         return sortedMap;
+
     }
 }
 
