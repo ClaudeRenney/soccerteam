@@ -1,0 +1,5 @@
+Arsenal 4,ManUnited 2
+Liverpool 1,Spurs 0
+Arsenal 3,Real_Madrid 2
+Real_Madrid 1,Liverpool 1
+ManUnited 4,Spurs 3
